@@ -4,7 +4,7 @@ This Weather App is a simple web application built with TypeScript and React. It
 
 #### Preview
 
-To see the Weather App in action, [click here](https://weather-app-indol-two-15.vercel.app/).
+To see the Weather App in action, [click here](https://tsx-weather-app.vercel.app/).
 
 #### Features
 
