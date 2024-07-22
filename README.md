@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+### Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Weather App is a simple web application built with TypeScript and React. It allows users to search for weather information based on location and displays details such as temperature, feels like temperature, humidity, and wind speed.
 
-Currently, two official plugins are available:
+#### Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To see the Weather App in action, [click here](https://weather-app-indol-two-15.vercel.app/).
 
-## Expanding the ESLint configuration
+#### Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Search for weather information by entering a location.
+- Displays current temperature in Celsius.
+- Shows "Feels Like" temperature, humidity, and wind speed.
+- Responsive design suitable for various screen sizes.
 
-- Configure the top-level `parserOptions` property like this:
+#### Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- TypeScript
+- React
+- Axios (for making HTTP requests)
+- CSS (for styling)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### How to Use
+
+1. **Search for Weather Information**
+   - Enter a location in the input field and press Enter or click the "Search" button.
+
+2. **View Weather Details**
+   - Once the location is found, the app displays the current weather details including temperature, "Feels Like" temperature, humidity, and wind speed.
+
+3. **Interact with Weather Data**
+   - Toggle between different locations to see their respective weather details.
+
+#### Setup Instructions
+
+To set up the Weather App locally, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/alisy4f/tsx-weather-app.git
+   ```
+
+2. Navigate into the project directory:
+   ```
+   cd tsx-weather-app
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+   ```
+   VITE_API_KEY=your_openweathermap_api_key
+   ```
+
+5. Start the development server:
+   ```
+   npm run dev
+   ```
+
+6. Open your browser and visit `http://localhost:5173` to view the Weather App.
+
+#### Acknowledgments
+
+- This Weather App utilizes data from OpenWeatherMap API.
